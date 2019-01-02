@@ -17,7 +17,7 @@
 
 ```graphql
 query {
-  movies(limit:3, rating:5) {
+  movies(limit:3, minimum_rating:5) {
     id
     title
     rating
@@ -30,16 +30,16 @@ query {
 
 ```graphql
 query {
-  movie(id:7893) {
+  movie(movie_id:7893) {
     id
     title
     rating
     summary
-    description_intro
+    description_full
     language
     medium_cover_image
   }
-  suggestions(id:7893) {
+  suggestions(movie_id:7893) {
     title
     rating
   }
