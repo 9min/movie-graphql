@@ -1,5 +1,7 @@
 # movie-graphql
 
+[https://movie-graphql.herokuapp.com](https://movie-graphql.herokuapp.com)
+
 **실행 방법 (서버 + 클라이언트)**
 
 1. npm install
