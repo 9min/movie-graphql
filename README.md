@@ -48,7 +48,7 @@ query {
 }
 ``` 
 
-출처: [나의 첫번째 GraphQL 서버 만들기](https://www.youtube.com/watch?v=3PZGW5Iwtv4&list=PL7jH19IHhOLOpU_yAYzCO4iQNvdou1AnK)
+참고: [나의 첫번째 GraphQL 서버 만들기](https://www.youtube.com/watch?v=3PZGW5Iwtv4&list=PL7jH19IHhOLOpU_yAYzCO4iQNvdou1AnK)
 
 ## Client for the MovieQL API built with Apollo
 
@@ -59,7 +59,7 @@ query {
 3. npm install
 4. npm start
 
-출처: [Apollo & GraphQL로 영화 웹앱 만들기](https://www.youtube.com/watch?v=ZqNFgnlGx78&list=PL7jH19IHhOLOVNxdXbPqcOweev3NuI527)
+참고: [Apollo & GraphQL로 영화 웹앱 만들기](https://www.youtube.com/watch?v=ZqNFgnlGx78&list=PL7jH19IHhOLOVNxdXbPqcOweev3NuI527)
 
 ## Heroku에 올리는 방법
 
