@@ -60,3 +60,15 @@ query {
 4. npm start
 
 출처: [Apollo & GraphQL로 영화 웹앱 만들기](https://www.youtube.com/watch?v=ZqNFgnlGx78&list=PL7jH19IHhOLOVNxdXbPqcOweev3NuI527)
+
+## Heroku에 올리는 방법
+
+1. [Heroku 가입](http://herokuapp.com)
+2. [Heroku CLI 설치](https://devcenter.heroku.com/articles/heroku-cli)
+3. 프로젝트 폴더로 이동
+4. `$ heroku login`
+5. `$ heroku create 저장소이름`
+6. `$ git add .`
+7. `$ git commit -m "message"`
+8. `$ git push heroku master`
+9. `$ heroku open`
