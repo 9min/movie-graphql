@@ -18,7 +18,7 @@ export const MOVIE_DETAILS = gql`
       medium_cover_image
       title
       rating
-      description_intro
+      description_full
       language
       genres
     },

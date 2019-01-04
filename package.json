@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "npm install express",
     "start": "node server.js",
-    "server": "nodemon server.js",
+    "server": "nodemon --exec babel-node server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -21,14 +21,18 @@
   },
   "homepage": "https://github.com/9min/movie-graphql#readme",
   "dependencies": {
+    "apollo-server-express": "^2.3.1",
     "axios": "^0.18.0",
     "concurrently": "^4.1.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "express-graphql": "^0.7.1",
-    "graphql": "^14.0.2"
+    "graphql": "^14.0.2",
+    "graphql-import": "^0.7.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
     "nodemon": "^1.18.9"
   }
 }

@@ -1,20 +1,19 @@
-const express = require('express');
-const graphqlHTTP = require('express-graphql');
-const cors = require('cors');
-const schema = require('./graphql/schema');
-const path = require('path');
+import express from 'express';
+import { importSchema } from 'graphql-import';
+import { ApolloServer } from 'apollo-server-express';
+import cors from 'cors';
+import resolvers from './graphql/resolvers';
+import path from 'path';
 
 const app = express();
 
 // Allow cross-origin
 app.use(cors());
 
-app.use('/graphql',
-  graphqlHTTP({
-    schema,
-    graphiql: true
-  })
-);
+const typeDefs = importSchema('graphql/schema.graphql');
+const server = new ApolloServer({ typeDefs, resolvers });
+
+server.applyMiddleware({ app });
 
 app.use(express.static('public'));
 
