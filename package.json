@@ -4,7 +4,7 @@
   "description": "Movie API with GraphQL",
   "main": "server.js",
   "scripts": {
-    "postinstall": "npm install express",
+    "postinstall": "npm install express nodemon",
     "start": "nodemon --exec babel-node server.js",
     "server": "nodemon --exec babel-node server.js",
     "client": "npm start --prefix client",
